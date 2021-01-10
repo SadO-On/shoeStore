@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/loginFragment2">
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.udacity.shoestore.screens.WelcomeFragment"
+        android:label="Shoe Store"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_instractionFragment"
+            app:destination="@id/instractionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment2"
+        android:name="com.udacity.shoestore.screens.LoginFragment"
+        android:label="Shoe Store"
+        tools:layout="@layout/login_fragment" >
+        <action
+            android:id="@+id/action_loginFragment2_to_welcomeFragment2"
+            app:destination="@id/welcomeFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/instractionFragment"
+        android:name="com.udacity.shoestore.screens.InstractionFragment"
+        android:label="Shoe Store"
+        tools:layout="@layout/fragment_instraction" >
+        <action
+            android:id="@+id/action_instractionFragment_to_shoeFragment"
+            app:destination="@id/shoeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shoeFragment"
+        android:name="com.udacity.shoestore.screens.ShoeFragment"
+        android:label="Shoe Store"
+        tools:layout="@layout/fragment_shoe" >
+        <action
+            android:id="@+id/action_shoeFragment_to_shoeDetailFragment"
+            app:destination="@id/shoeDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shoeDetailFragment"
+        android:name="com.udacity.shoestore.screens.ShoeDetailFragment"
+        android:label="Shoe Store"
+        tools:layout="@layout/fragment_shoe_detail" >
+        <action
+            android:id="@+id/action_shoeDetailFragment_to_shoeFragment"
+            app:destination="@id/shoeFragment"
+            app:popUpTo="@id/instractionFragment" />
+    </fragment>
+</navigation>

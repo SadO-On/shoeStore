@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">ShoeStore</string>
+    <string name="Shop_name">Shoe App</string>
+    <string name="email">Email</string>
+    <string name="edit_email">Email</string>
+    <string name="password_label">Password</string>
+    <string name="Login_btn">LOGIN</string>
+    <string name="welcome_textview">Welcome in ShoeStore</string>
+    <string name="wlecome_screen_btn">Agree</string>
+    <string name="sign_up">Register</string>
+    <string name="instruction_textview"> Instructions</string>
+    <string name="policies">
+        Our new policy:  <br />
+        \n1-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+       \n2-Mauris lobortis ante augue. Maecenas fringilla in mauris ut pretium.
+        \n3-Donec vitae sem eget urna ultrices efficitur id eu magna.
+        \n4-Fusce a justo nisi. Quisque varius consectetur dignissim.
+        \n5- Integer id nunc non velit venenatis gravida ut at leo.
+            \n press Agree to continue to the store.
+    </string>
+    <string name="instructions">
+        \nYou should follow this instructions:  <br />
+        \n1-Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+        \n2-Mauris lobortis ante augue. Maecenas fringilla in mauris ut pretium. <br />
+        \n3-Donec vitae sem eget urna ultrices efficitur id eu magna. <br />
+        \n4-Fusce a justo nisi. Quisque varius consectetur dignissim. <br />
+        \n5- Integer id nunc non velit venenatis gravida ut at leo. <br />
+             \npress I get it to continue to the store.
+    </string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="get_it_textbtn">I Get It</string>
+    <string name="submit">add</string>
+    <string name="shoe_name_string">Shoe name</string>
+    <string name="shoe_name_hint">Enter The Name of shoe</string>
+    <string name="shoe_company_string">Company</string>
+    <string name="company_hintSreing">Enter Company name</string>
+    <string name="shoe_size_string">Size</string>
+    <string name="size_hintSreing">Enter size</string>
+    <string name="shoe_description_string">Description</string>
+    <string name="Description_hintSreing">Description</string>
+    <string name="add_btn_string">Add</string>
+    <string name="cancel_btn_string">cancel</string>
+    <string name="logout_string">Logout</string>
+
+
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context=".screens.InstractionFragment">
+    <!--     It's simple layout consist of 2 text view and 1 Button There's no need to use Constraint layout.
+      Using Linear layout in this situation is simpler and good for performance.
+     -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cairo_bold"
+            android:text="@string/instruction_textview"
+            android:textAlignment="center"
+            android:textColor="#1A551D"
+            android:textSize="24sp" />
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="182dp"
+
+            android:layout_margin="8dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/instructions"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+        </ScrollView>
+
+        <Button
+            android:id="@+id/get_it_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="@string/get_it_textbtn" />
+
+    </LinearLayout>
+</layout>
