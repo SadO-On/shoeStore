@@ -7,7 +7,7 @@
 
     <data>
         <variable
-            name="Shoe"
+            name="shoes"
             type="com.udacity.shoestore.models.Shoe"/>
     </data>
     <!--  In shoe detail fragments we have multiple views in different positions Same constraint layout is better than the linear layout -->
@@ -39,7 +39,7 @@
             android:ems="10"
             android:hint="@string/shoe_name_hint"
             android:inputType="textPersonName"
-            android:text="@={Shoe.name}"
+            android:text="@={shoes.name}"
             app:layout_constraintBaseline_toBaselineOf="@+id/shoe_name_txtview"
             app:layout_constraintStart_toEndOf="@+id/shoe_name_txtview" />
 
@@ -66,7 +66,7 @@
             android:ems="10"
             android:hint="@string/company_hintSreing"
             android:inputType="textPersonName"
-            android:text="@={Shoe.company}"
+            android:text="@={shoes.company}"
             app:layout_constraintBaseline_toBaselineOf="@+id/company_txtview"
             app:layout_constraintStart_toEndOf="@+id/company_txtview" />
 
@@ -93,7 +93,7 @@
             android:ems="10"
             android:hint="@string/size_hintSreing"
             android:inputType="numberDecimal"
-            android:text="@{String.valueOf(Shoe.size)}"
+            android:text="@{String.valueOf(shoes.size)}"
             app:layout_constraintBaseline_toBaselineOf="@+id/shoe_size_txtview"
             app:layout_constraintStart_toEndOf="@+id/shoe_size_txtview" />
 
@@ -120,7 +120,7 @@
             android:gravity="start|top"
             android:hint="@string/Description_hintSreing"
             android:inputType="textMultiLine"
-            android:text="@={Shoe.description}"
+            android:text="@={shoes.description}"
             app:layout_constraintBaseline_toBaselineOf="@+id/shoe_description_txtview"
             app:layout_constraintStart_toEndOf="@+id/shoe_description_txtview" />
 

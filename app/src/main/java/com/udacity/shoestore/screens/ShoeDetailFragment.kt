@@ -25,11 +25,13 @@ class ShoeDetailFragment : Fragment() {
     ): View? {
         val dataBinding: FragmentShoeDetailBinding =
             DataBindingUtil.inflate(inflater, R.layout.fragment_shoe_detail, container, false)
+
+        dataBinding.shoes = Shoe("",0.0,"","")
         dataBinding.addBtn.setOnClickListener { view: View ->
 
-            val shoe = dataBinding.shoe
+            val shoe = dataBinding.shoes
 
-            viewModel.addShoe(shoe)
+            viewModel.addShoe(shoe!!)
             Navigation.findNavController(view)
                 .navigate(R.id.action_shoeDetailFragment_to_shoeFragment)
 
